@@ -51,7 +51,7 @@
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net9.0-android'">
       <PackageReference Include="Xamarin.Firebase.Crashlytics">
-        <Version>120.0.0.1</Version>
+        <Version>120.0.1</Version>
       </PackageReference>
     </ItemGroup>
 
