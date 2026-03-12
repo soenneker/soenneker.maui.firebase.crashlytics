@@ -4,10 +4,11 @@
   </Folder>
   <Folder Name="/.github/workflows/">
     <File Path=".github/workflows/build-and-test.yml" />
+    <File Path=".github/workflows/codeql.yml" />
     <File Path=".github/workflows/publish-package.yml" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src/Soenneker.Maui.Firebase.Crashlytics.csproj" />
+    <Project Path="src/Soenneker.Maui.Firebase.Crashlytics/Soenneker.Maui.Firebase.Crashlytics.csproj" />
   </Folder>
   <Folder Name="/test/">
     <Project Path="test/Soenneker.Maui.Firebase.Crashlytics.Tests/Soenneker.Maui.Firebase.Crashlytics.Tests.csproj" />
