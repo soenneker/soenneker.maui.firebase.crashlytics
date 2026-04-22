@@ -59,7 +59,7 @@ jobs:
         run: dotnet build test/Soenneker.Maui.Firebase.Crashlytics.Tests/Soenneker.Maui.Firebase.Crashlytics.Tests.csproj --configuration Release --no-restore --verbosity minimal
 
       - name: Test
-        run: dotnet test test/Soenneker.Maui.Firebase.Crashlytics.Tests/Soenneker.Maui.Firebase.Crashlytics.Tests.csproj --configuration Release --no-build --no-restore --verbosity normal
+        run: dotnet test --project test/Soenneker.Maui.Firebase.Crashlytics.Tests/Soenneker.Maui.Firebase.Crashlytics.Tests.csproj --configuration Release --no-build --no-restore --verbosity normal
 
       - name: Restore library
         run: dotnet restore src/Soenneker.Maui.Firebase.Crashlytics/Soenneker.Maui.Firebase.Crashlytics.csproj --verbosity minimal
