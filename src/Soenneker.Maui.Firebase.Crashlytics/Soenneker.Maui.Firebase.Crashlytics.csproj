@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net10.0;net10.0-android;net10.0-ios</TargetFrameworks>
         <SingleProject>true</SingleProject>
@@ -35,11 +34,12 @@
         <LangVersion>latest</LangVersion>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
         <PackageReleaseNotes Condition="'$(PACKAGE_RELEASE_NOTES)' != ''">
             $(PACKAGE_RELEASE_NOTES)
-        </PackageReleaseNotes></PropertyGroup>
-    
+        </PackageReleaseNotes>
+    </PropertyGroup>
+
     <ItemGroup>
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
@@ -52,9 +52,9 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-android'">
-      <PackageReference Include="Xamarin.Firebase.Crashlytics">
-        <Version>120.0.4.1</Version>
-      </PackageReference>
+        <PackageReference Include="Xamarin.Firebase.Crashlytics">
+            <Version>120.0.4.1</Version>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-ios'">

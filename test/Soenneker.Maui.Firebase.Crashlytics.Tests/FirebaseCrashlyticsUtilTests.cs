@@ -1,18 +1,17 @@
-﻿using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Maui.Firebase.Crashlytics.Tests;
 
-[Collection("Collection")]
-public class FirebaseCrashlyticsUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class FirebaseCrashlyticsUtilTests : HostedUnitTest
 {
 
-    public FirebaseCrashlyticsUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public FirebaseCrashlyticsUtilTests(Host host) : base(host)
     {
 
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
