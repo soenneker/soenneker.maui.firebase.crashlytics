@@ -8,8 +8,16 @@ using Firebase.Crashlytics;
 
 namespace Soenneker.Maui.Firebase.Crashlytics.Registrars;
 
+/// <summary>
+/// Represents the crashlytics extensions.
+/// </summary>
 public static class CrashlyticsExtensions
 {
+    /// <summary>
+    /// Adds crashlytics.
+    /// </summary>
+    /// <param name="builder">The builder.</param>
+    /// <returns>The result of the operation.</returns>
     public static FirebaseMauiBuilder AddCrashlytics(this FirebaseMauiBuilder builder)
     {
         return builder.AddService((firebaseInstance, config) =>
