@@ -16,8 +16,8 @@ public static class CrashlyticsExtensions
     /// <summary>
     /// Adds crashlytics.
     /// </summary>
-    /// <param name="builder">The builder.</param>
-    /// <returns>The result of the operation.</returns>
+    /// <param name="builder">Builder to configure.</param>
+    /// <returns>The same builder instance, so additional classes or variants can be chained.</returns>
     public static FirebaseMauiBuilder AddCrashlytics(this FirebaseMauiBuilder builder)
     {
 #pragma warning disable CA1416 // The referenced Firebase package has malformed platform metadata; this project is platform-targeted.
