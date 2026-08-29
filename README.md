@@ -3,11 +3,27 @@
 [![](https://img.shields.io/nuget/dt/soenneker.maui.firebase.crashlytics.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.maui.firebase.crashlytics/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.maui.firebase.crashlytics/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.maui.firebase.crashlytics/actions/workflows/codeql.yml)
 
-# ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Maui.Firebase.Crashlytics
-### A cross-platform library for adding Firebase Crashlytics to MAUI applications
+# Soenneker.Maui.Firebase.Crashlytics
 
-## Installation
+Represents the crashlytics extensions.
 
-```
+## Install
+
+```bash
 dotnet add package Soenneker.Maui.Firebase.Crashlytics
 ```
+
+## Quick start
+
+```csharp
+using Soenneker.Maui.Firebase.Crashlytics.Registrars;
+
+FirebaseMauiBuilder builder = /* obtain from your application */;
+var result = builder.AddCrashlytics();
+```
+
+Adds crashlytics.
+
+## What you get
+
+- `CrashlyticsExtensions` — Represents the crashlytics extensions.
